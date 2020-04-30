@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% for instance in object_list %}
+    
+      <div class="card text-center shadow-lg p-3 my-5 bg-white rounded" style="margin: 20% ;">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          {% url 'definitons:definition-detail' definition.id as the_url %}
+          <h4 class="card-title ">{{ instance.title }}</h4>
+          <p class="card-text ">{{instance.description}}</p>
+          <a href="{{instance.id}}" class="btn btn-outline-secondary">Go somewhere</a>
+        </div>
+        <div class="card-footer text-muted">
+          To be continued...
+        </div>
+      </div>
+    </div>    
+    {% endfor %}
+   
+
+{% endblock %}

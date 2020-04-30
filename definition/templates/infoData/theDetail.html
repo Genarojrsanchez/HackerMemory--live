@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+   <div class="card shadow" style="margin: 8%">
+        <h5 class="card-header">Featured</h5>
+        <div class="card-body">
+          <h5 class="card-title">{{object.title}}</h5>
+          <p class="card-text">{{object.description}}</p>
+          <a href="/definitions/{{object.id}}/update" class="btn btn-primary">Update</a>
+        </div>
+      </div>
+{% endblock %}

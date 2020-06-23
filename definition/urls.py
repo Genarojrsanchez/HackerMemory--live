@@ -13,5 +13,6 @@ urlpatterns = [
     path('create/', HackerCreateView.as_view(), name='definition-create'),
     path('<int:id>/', HackerDetailView.as_view(), name='definition-detail'),
     path('<int:id>/update/', HackerUpdateView.as_view(), name='definition-update'),
-    path('<int:id>/delete/', HackerDeleteView.as_view(), name='definition-delete'), 
+    path('<int:id>/delete/', HackerDeleteView.as_view(), name='definition-delete'),
+     
 ]

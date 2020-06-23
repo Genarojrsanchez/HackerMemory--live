@@ -28,7 +28,7 @@ class HackerCreateView(CreateView):
 
      def form_valid(self, form):
          print(form.cleaned_data)
-         return super().form_valid(form)
+         return super().form_valid(form)   
 
 #listView  
 class HackerListView(ListView):

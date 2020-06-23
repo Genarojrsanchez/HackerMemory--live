@@ -7,6 +7,7 @@
         <li>all info</li>
     </ul>
 </nav> -->
+{% block content %}
 
 <nav class="nav bg-dark row justify-content-between">
     <ul class="nav  col-5">
@@ -15,7 +16,7 @@
         </li>
       
         <li class="nav-item ml-2 my-2">
-            <a class=" btn btn-outline-light" href="./create">Add Info</a>
+            <a class=" btn btn-outline-light" href="./create" >Add Info</a>
         </li>
         <li class="nav-item ml-2 my-2">
             <a class=" btn btn-outline-light" href="/definitions">Home</a>
@@ -26,7 +27,8 @@
     </ul>  
     <form class="form-inline mr-4">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit" ">Search</button>
       </form>
   </nav>
   
+  {% endblock %}

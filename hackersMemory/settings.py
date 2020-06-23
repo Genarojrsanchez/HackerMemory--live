@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ')z+7q%qv@5(5!wkkc!f$fo&s(*10axe*9)p6b5_(mj5*t7y5o9+'
+SECRET_KEY = ')z+7q%qv@5(5!wkkc!g5f$fo&s(*10axe*9)p6b5_(mj5*t7y5o9+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', 'hacker-memory.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'hacker-memory.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -79,11 +79,15 @@ WSGI_APPLICATION = 'hackersMemory.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'hackermemory',
+        'USER': 'genarosanchez',  
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators

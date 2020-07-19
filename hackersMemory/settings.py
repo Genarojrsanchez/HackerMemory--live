@@ -85,7 +85,7 @@ DATABASES = {
         'NAME': 'hackermemory',
         'USER': 'genarosanchez',  
         'PASSWORD': 'postgres',
-        'HOST': 'localhost',
+        # 'HOST': 'localhost',
     }
 }
 

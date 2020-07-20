@@ -25,7 +25,7 @@ SECRET_KEY = ')z+7q%qv@5(5!wkkc!g5f$fo&s(*10axe*9)p6b5_(mj5*t7y5o9+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', 'hacker-memory.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
